@@ -1,0 +1,116 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #F2F2F2;
+}
+section{
+  max-width: 1000px;
+  margin: 60px auto 0;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 1.75em;
+  line-height: 1.5;
+  text-align: center;
+}
+.form{
+  margin-top: 30px;
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+dl{
+  display: flex;
+  flex-wrap: wrap;
+}
+dt{
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 15px;
+  background-color: #3D546A;
+  color: #fff;
+  border-bottom: 1px solid #F2F2F2;
+}
+dt span{
+  color: #E85C4E;
+  background-color: #fff;
+  width: 40px;
+  height: 18px;
+  text-align: center;
+  vertical-align: middle;
+}
+dd{
+  width: 70%;
+  padding: 22px 15px 22px 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #F2F2F2;
+}
+dd.name input,
+dd.tel input,
+dd.reserve input{
+  height: 37px;
+  border: none;
+  background-color: #F2F2F2;
+  outline: none;
+  padding-left: 10px;
+}
+dd.name input{
+  width: 100%;
+}
+dd.tel input{
+  width: 11.6666%;
+}
+dd.reserve input{
+  
+}
+p{
+  margin-top: 17px;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-left: 30px;
+}
+#online_text{
+  display: block;
+}
+#venue_text{
+  display: none;
+}
+button{
+  margin: 30px auto 0;
+  width: 280px;
+  height: 70px;
+  display: block;
+  background-color: #E85C4E;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.25rem;
+  line-height: 1;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover{
+  opacity: .7;
+}
+
+/* エラーメッセージのスタイル */
+.error {
+  width : 100%;
+  padding: 0;
+  display: inline-block;
+  font-size: 90%;
+  color: red;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
