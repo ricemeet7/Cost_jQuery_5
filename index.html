@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+  <title>タイトル</title>
+</head>
+
+<body>
+  <section>
+    <h1>セミナー お申込みフォーム</h1>
+    <div class="form">
+      <form class="validation_form" name="form1" action="confirm.php" method="post" novalidate>
+        <dl class="contact_table">
+          <dt>
+            <label for="name">名前</label><span>必須</span>
+          </dt>
+          <dd class="name">
+            <input id="name" class="required maxlength" type="text" name="name" data-maxlength="15">
+          </dd>
+          <dt>
+            <label for="name">メールアドレス</label><span>必須</span>
+          </dt>
+          <dd class="name">
+            <input id="email1" class="required email" type="email1" name="email1" size="30">
+          </dd>
+          <dt>
+            <label for="name">メールアドレス（再入力）</label><span>必須</span>
+          </dt>
+          <dd class="name">
+            <input id="email2" class="required equal-to" type="email2" name="email2" size="30" data-equal-to="email1">
+          </dd>
+          <dt>
+            <label for="tel">電話番号</label><span>必須</span>
+          </dt>
+          <dd class="tel">
+            <input id="te1" class="required tel maxlength" type="tel" name="No1" data-maxlength="4"> -
+            <input id="tel2" class="required tel maxlength" type="tel" name="No2" data-maxlength="4"> -
+            <input id="tel3" class="required tel maxlength" type="tel" name="No3" data-maxlength="4">
+          </dd>
+          <dt>
+            <label>予約日</label><span>必須</span>
+          </dt>
+          <dd class="reserve">
+            <input class="required maxlength reserve" type="text" id="datepicker" data-maxlength="10"><span> 13時～14時</span>
+          </dd>
+          <dt>
+            <label>受講形式</label><span>必須</span>
+          </dt>
+          
+          <dd class="seminar">
+            
+            <input id="online" type="radio" name="course_format"  onchange="onRadioButtonChange()" checked><label for="online">オンラインで受講</label><br>
+
+            <input id="venue" type="radio" name="course_format" onchange="onRadioButtonChange()"><label for="venue">会場で受講</label>
+
+          </dd>
+
+        </dl>
+        <p id="online_text" class="online_text">当日はオンライン会議システムを使用いたします。<br>
+          ご受講にあたり、端末とネットワーク環境が必要になりますのでご準備をお願いいたします。<br>
+          参加方法については、前日までに別途ご案内を差し上げます。</p>
+        <p id="venue_text" class="venue_text">【会場情報】<br>
+          会場：代々木GIプラザ3F Room1<br>
+          住所：〒151-0053　東京都渋谷区代々木1-1-1<br>
+          電話番号：00-0000-0000</p>
+        <button type="submit">上記の内容で申し込む</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
